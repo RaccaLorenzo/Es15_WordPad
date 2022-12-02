@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "frmWordPad";
             this.Text = "frmWordPad";
+            this.Load += new System.EventHandler(this.frmWordPad_Load);
             this.ResumeLayout(false);
 
         }

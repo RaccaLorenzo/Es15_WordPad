@@ -16,5 +16,10 @@ namespace Es15_WordPad
         {
             InitializeComponent();
         }
+
+        private void frmWordPad_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
