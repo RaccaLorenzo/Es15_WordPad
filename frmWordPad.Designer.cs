@@ -172,6 +172,7 @@
             this.tagliaToolStripButton.Name = "tagliaToolStripButton";
             this.tagliaToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.tagliaToolStripButton.Text = "&Taglia";
+            this.tagliaToolStripButton.Click += new System.EventHandler(this.TagliaToolStripButton_Click);
             // 
             // copiaToolStripButton
             // 
@@ -181,6 +182,7 @@
             this.copiaToolStripButton.Name = "copiaToolStripButton";
             this.copiaToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.copiaToolStripButton.Text = "&Copia";
+            this.copiaToolStripButton.Click += new System.EventHandler(this.CopiaToolStripButton_Click);
             // 
             // incollaToolStripButton
             // 
@@ -190,6 +192,7 @@
             this.incollaToolStripButton.Name = "incollaToolStripButton";
             this.incollaToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.incollaToolStripButton.Text = "&Incolla";
+            this.incollaToolStripButton.Click += new System.EventHandler(this.IncollaToolStripButton_Click);
             // 
             // menuStrip1
             // 
@@ -251,12 +254,14 @@
             this.salvaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.salvaToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.salvaToolStripMenuItem.Text = "&Salva";
+            this.salvaToolStripMenuItem.Click += new System.EventHandler(this.SalvaToolStripMenuItem_Click);
             // 
             // salvaconnomeToolStripMenuItem
             // 
             this.salvaconnomeToolStripMenuItem.Name = "salvaconnomeToolStripMenuItem";
             this.salvaconnomeToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.salvaconnomeToolStripMenuItem.Text = "Salva &con nome";
+            this.salvaconnomeToolStripMenuItem.Click += new System.EventHandler(this.SalvaconnomeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -316,20 +321,20 @@
             // 
             this.annullaToolStripMenuItem.Name = "annullaToolStripMenuItem";
             this.annullaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.annullaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.annullaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.annullaToolStripMenuItem.Text = "&Annulla";
             // 
             // ripristinaToolStripMenuItem
             // 
             this.ripristinaToolStripMenuItem.Name = "ripristinaToolStripMenuItem";
             this.ripristinaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.ripristinaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ripristinaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.ripristinaToolStripMenuItem.Text = "&Ripristina";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(169, 6);
             // 
             // tagliaToolStripMenuItem
             // 
@@ -339,6 +344,7 @@
             this.tagliaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.tagliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tagliaToolStripMenuItem.Text = "&Taglia";
+            this.tagliaToolStripMenuItem.Click += new System.EventHandler(this.TagliaToolStripMenuItem_Click);
             // 
             // copiaToolStripMenuItem
             // 
@@ -348,6 +354,7 @@
             this.copiaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.copiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copiaToolStripMenuItem.Text = "&Copia";
+            this.copiaToolStripMenuItem.Click += new System.EventHandler(this.CopiaToolStripMenuItem_Click);
             // 
             // incollaToolStripMenuItem
             // 
@@ -357,16 +364,17 @@
             this.incollaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.incollaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.incollaToolStripMenuItem.Text = "&Incolla";
+            this.incollaToolStripMenuItem.Click += new System.EventHandler(this.IncollaToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(169, 6);
             // 
             // selezionatuttoToolStripMenuItem
             // 
             this.selezionatuttoToolStripMenuItem.Name = "selezionatuttoToolStripMenuItem";
-            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.selezionatuttoToolStripMenuItem.Text = "Seleziona &tutto";
             // 
             // frmWordPad

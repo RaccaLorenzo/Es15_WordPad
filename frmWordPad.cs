@@ -27,5 +27,62 @@ namespace Es15_WordPad
         {
             filemanager.salva(RtxtTesto);
         }
+
+        private void SalvaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            filemanager.salva(RtxtTesto);
+        }
+
+        private void SalvaconnomeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            filemanager.SalvaConNome("Ciao",RtxtTesto);
+        }
+
+        private void TagliaToolStripButton_Click(object sender, EventArgs e)
+        {
+            this.taglia();
+        }
+
+        private void TagliaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.taglia();
+        }
+
+        private void CopiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.copia();
+        }
+        private void CopiaToolStripButton_Click(object sender, EventArgs e)
+        {
+            this.copia();
+        }
+
+        private void IncollaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.incolla();
+        }
+
+        private void IncollaToolStripButton_Click(object sender, EventArgs e)
+        {
+            this.incolla();
+        }
+
+
+        private void taglia()
+        {
+            RtxtTesto.Cut();
+        }
+
+
+        private void incolla()
+        {
+            RtxtTesto.Paste();
+        }
+
+
+        private void copia()
+        {
+            RtxtTesto.Copy();
+        }
     }
 }
