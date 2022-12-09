@@ -84,5 +84,25 @@ namespace Es15_WordPad
         {
             RtxtTesto.Copy();
         }
+
+        private void FontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void SinistraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RtxtTesto.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        private void CentroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RtxtTesto.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
+        private void DestraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RtxtTesto.SelectionAlignment = HorizontalAlignment.Right;
+        }
     }
 }

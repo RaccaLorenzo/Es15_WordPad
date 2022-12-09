@@ -64,6 +64,11 @@
             this.incollaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.selezionatuttoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AllineamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sinistraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.destraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.centroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -198,7 +203,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.modificaToolStripMenuItem});
+            this.modificaToolStripMenuItem,
+            this.FontToolStripMenuItem,
+            this.AllineamentoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(757, 24);
@@ -321,20 +328,20 @@
             // 
             this.annullaToolStripMenuItem.Name = "annullaToolStripMenuItem";
             this.annullaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.annullaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.annullaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.annullaToolStripMenuItem.Text = "&Annulla";
             // 
             // ripristinaToolStripMenuItem
             // 
             this.ripristinaToolStripMenuItem.Name = "ripristinaToolStripMenuItem";
             this.ripristinaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.ripristinaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.ripristinaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ripristinaToolStripMenuItem.Text = "&Ripristina";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(169, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // tagliaToolStripMenuItem
             // 
@@ -369,13 +376,51 @@
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(169, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // selezionatuttoToolStripMenuItem
             // 
             this.selezionatuttoToolStripMenuItem.Name = "selezionatuttoToolStripMenuItem";
-            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.selezionatuttoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.selezionatuttoToolStripMenuItem.Text = "Seleziona &tutto";
+            // 
+            // FontToolStripMenuItem
+            // 
+            this.FontToolStripMenuItem.Name = "FontToolStripMenuItem";
+            this.FontToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.FontToolStripMenuItem.Text = "Font";
+            this.FontToolStripMenuItem.Click += new System.EventHandler(this.FontToolStripMenuItem_Click);
+            // 
+            // AllineamentoToolStripMenuItem
+            // 
+            this.AllineamentoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sinistraToolStripMenuItem,
+            this.centroToolStripMenuItem,
+            this.destraToolStripMenuItem});
+            this.AllineamentoToolStripMenuItem.Name = "AllineamentoToolStripMenuItem";
+            this.AllineamentoToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.AllineamentoToolStripMenuItem.Text = "Allineamento";
+            // 
+            // sinistraToolStripMenuItem
+            // 
+            this.sinistraToolStripMenuItem.Name = "sinistraToolStripMenuItem";
+            this.sinistraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sinistraToolStripMenuItem.Text = "Sinistra";
+            this.sinistraToolStripMenuItem.Click += new System.EventHandler(this.SinistraToolStripMenuItem_Click);
+            // 
+            // destraToolStripMenuItem
+            // 
+            this.destraToolStripMenuItem.Name = "destraToolStripMenuItem";
+            this.destraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.destraToolStripMenuItem.Text = "Destra";
+            this.destraToolStripMenuItem.Click += new System.EventHandler(this.DestraToolStripMenuItem_Click);
+            // 
+            // centroToolStripMenuItem
+            // 
+            this.centroToolStripMenuItem.Name = "centroToolStripMenuItem";
+            this.centroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.centroToolStripMenuItem.Text = "Centro";
+            this.centroToolStripMenuItem.Click += new System.EventHandler(this.CentroToolStripMenuItem_Click);
             // 
             // frmWordPad
             // 
@@ -434,6 +479,11 @@
         private System.Windows.Forms.ToolStripMenuItem incollaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem selezionatuttoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FontToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AllineamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sinistraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem centroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem destraToolStripMenuItem;
     }
 }
 
