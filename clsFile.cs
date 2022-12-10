@@ -41,7 +41,7 @@ namespace Es15_WordPad
         public clsFile()
         {
             this.Filename = "";
-            this.Modificato = true;
+            this.Modificato = false;
         }
 
 
@@ -59,6 +59,7 @@ namespace Es15_WordPad
 
         public void SalvaConNome(string text, RichTextBox rtb)
         {
+            string[] s;
             SaveFileDialog dlgSalva = new SaveFileDialog();
             dlgSalva.Filter = "(*rtf)|*.rtf|" +
                 "Tutti i file (*.*)|*.*";
@@ -67,12 +68,11 @@ namespace Es15_WordPad
             ris = dlgSalva.ShowDialog();
             if (ris == DialogResult.OK)
             {
-                Filename = dlgSalva.FileName;
-                rtb.SaveFile(Application.StartupPath + "\\" + filename + ".rtf");//non funziona
+                s = dlgSalva.FileName.Split('\\');
+                Filename = s[s.Length - 1];
+                rtb.SaveFile(Application.StartupPath + filename);//non funziona
             }
         }
-
-       
         
     }
 }
