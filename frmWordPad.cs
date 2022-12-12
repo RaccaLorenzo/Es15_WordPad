@@ -104,5 +104,57 @@ namespace Es15_WordPad
         {
             RtxtTesto.SelectionAlignment = HorizontalAlignment.Right;
         }
+
+        private void puntatiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RtxtTesto.SelectionBullet = true;
+        }
+
+        private void numeratiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuovoToolStripButton_Click(object sender, EventArgs e)
+        {
+            nuovo();
+        }
+
+        private void RtxtTesto_TextChanged(object sender, EventArgs e) => filemanager.Modificato = true;
+
+        private void apriToolStripButton_Click(object sender, EventArgs e)
+        {
+            filemanager.ApriFile(RtxtTesto);
+        }
+
+        private void nuovoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            nuovo();
+        }
+
+
+        private void nuovo()
+        {
+
+            if (filemanager.Modificato)
+            {
+                DialogResult dr = MessageBox.Show("Vuoi salvare", "WordPad", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+
+                if (dr == DialogResult.Yes)
+                {
+                    filemanager.salva(RtxtTesto);
+                    filemanager.Filename = "";
+                    filemanager.Modificato = false;
+                    RtxtTesto.Clear();
+                }
+
+            }
+
+        }
+
+        private void apriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            filemanager.ApriFile(RtxtTesto);
+        }
     }
 }

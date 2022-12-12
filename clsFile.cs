@@ -50,29 +50,45 @@ namespace Es15_WordPad
         {
             if (modificato)
             {
-                if (filename != "")
-                    rtb.SaveFile(Application.StartupPath + filename );
+                if (filename != "") 
+                    rtb.SaveFile(filename);
                 else
                     SalvaConNome(rtb.Text, rtb);
+                modificato = false;
             }
         }
 
         public void SalvaConNome(string text, RichTextBox rtb)
         {
-            string[] s;
             SaveFileDialog dlgSalva = new SaveFileDialog();
-            dlgSalva.Filter = "(*rtf)|*.rtf|" +
+            dlgSalva.Filter = "Pagina WordPad (*rtf)|*.rtf|" +
                 "Tutti i file (*.*)|*.*";
             dlgSalva.Title = "Salva";
             DialogResult ris;
             ris = dlgSalva.ShowDialog();
             if (ris == DialogResult.OK)
             {
-                s = dlgSalva.FileName.Split('\\');
-                Filename = s[s.Length - 1];
-                rtb.SaveFile(Application.StartupPath + filename);//non funziona
+                rtb.SaveFile(dlgSalva.FileName);//funziona
+                modificato = false;
             }
         }
         
+        
+
+        public void ApriFile(RichTextBox rtb)
+        {
+            OpenFileDialog dlgApri = new OpenFileDialog();
+            dlgApri.Filter = "Pagina WordPad (*.rtf)|*.rtf|" +
+                "Tutti i file (*.*)|*.*";
+            dlgApri.Title = "Apri";
+            dlgApri.InitialDirectory = Environment.GetFolderPath(
+                Environment.SpecialFolder.Desktop);
+            DialogResult ris;
+            ris = dlgApri.ShowDialog();
+            if (ris == DialogResult.OK)
+            {
+                rtb.LoadFile(dlgApri.FileName);
+            }
+        }
     }
 }
