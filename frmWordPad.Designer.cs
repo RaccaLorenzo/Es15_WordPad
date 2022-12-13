@@ -72,6 +72,8 @@
             this.elenchiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.puntatiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.numeratiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.coloreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -246,7 +248,7 @@
             this.nuovoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.nuovoToolStripMenuItem.Name = "nuovoToolStripMenuItem";
             this.nuovoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.nuovoToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.nuovoToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.nuovoToolStripMenuItem.Text = "&Nuovo";
             this.nuovoToolStripMenuItem.Click += new System.EventHandler(this.nuovoToolStripMenuItem_Click);
             // 
@@ -256,7 +258,7 @@
             this.apriToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.apriToolStripMenuItem.Name = "apriToolStripMenuItem";
             this.apriToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.apriToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.apriToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.apriToolStripMenuItem.Text = "&Apri";
             this.apriToolStripMenuItem.Click += new System.EventHandler(this.apriToolStripMenuItem_Click);
             // 
@@ -398,6 +400,9 @@
             // 
             // FontToolStripMenuItem
             // 
+            this.FontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fontToolStripMenuItem1,
+            this.coloreToolStripMenuItem});
             this.FontToolStripMenuItem.Name = "FontToolStripMenuItem";
             this.FontToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.FontToolStripMenuItem.Text = "Font";
@@ -456,6 +461,20 @@
             this.numeratiToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.numeratiToolStripMenuItem.Text = "Numerati";
             this.numeratiToolStripMenuItem.Click += new System.EventHandler(this.numeratiToolStripMenuItem_Click);
+            // 
+            // fontToolStripMenuItem1
+            // 
+            this.fontToolStripMenuItem1.Name = "fontToolStripMenuItem1";
+            this.fontToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.fontToolStripMenuItem1.Text = "Font";
+            this.fontToolStripMenuItem1.Click += new System.EventHandler(this.fontToolStripMenuItem1_Click);
+            // 
+            // coloreToolStripMenuItem
+            // 
+            this.coloreToolStripMenuItem.Name = "coloreToolStripMenuItem";
+            this.coloreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.coloreToolStripMenuItem.Text = "Colore";
+            this.coloreToolStripMenuItem.Click += new System.EventHandler(this.coloreToolStripMenuItem_Click);
             // 
             // frmWordPad
             // 
@@ -522,6 +541,8 @@
         private System.Windows.Forms.ToolStripMenuItem elenchiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem puntatiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem numeratiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem coloreToolStripMenuItem;
     }
 }
 

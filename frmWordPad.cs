@@ -156,5 +156,21 @@ namespace Es15_WordPad
         {
             filemanager.ApriFile(RtxtTesto);
         }
+
+        private void fontToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FontDialog fd = new FontDialog();
+            fd.Font = RtxtTesto.Font;
+            fd.ShowDialog();
+            RtxtTesto.Font = fd.Font;
+        }
+
+        private void coloreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog cd = new ColorDialog();
+            cd.Color = RtxtTesto.ForeColor;
+            cd.ShowDialog();
+            RtxtTesto.ForeColor = cd.Color;
+        }
     }
 }
