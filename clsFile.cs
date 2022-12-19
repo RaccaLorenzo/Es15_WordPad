@@ -50,8 +50,12 @@ namespace Es15_WordPad
         {
             if (modificato)
             {
-                if (filename != "") 
+                if (filename != "")
+                {
+                    DialogResult ris = MessageBox.Show("Vuoi salvare?","WordPad", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                    if(ris == DialogResult.Yes)
                     rtb.SaveFile(filename);
+                }
                 else
                     SalvaConNome(rtb.Text, rtb);
                 modificato = false;
@@ -69,6 +73,7 @@ namespace Es15_WordPad
             if (ris == DialogResult.OK)
             {
                 rtb.SaveFile(dlgSalva.FileName);//funziona
+                filename = dlgSalva.FileName;
                 modificato = false;
             }
         }

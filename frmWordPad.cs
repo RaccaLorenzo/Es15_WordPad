@@ -172,5 +172,42 @@ namespace Es15_WordPad
             cd.ShowDialog();
             RtxtTesto.ForeColor = cd.Color;
         }
+
+        private void EsciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void AnnullaToolStripButton_Click(object sender, EventArgs e)
+        {
+            annulla();
+        }
+
+        private void RipristinaToolStripButton_Click(object sender, EventArgs e)
+        {
+            ripristina();
+        }
+
+        private void AnnullaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            annulla();
+        }
+
+        private void RipristinaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ripristina();
+        }
+
+        private void annulla()
+        {
+            RtxtTesto.Undo();
+        }
+
+        private void ripristina()
+        {
+            RtxtTesto.Redo();
+        }
     }
+
+    
 }
