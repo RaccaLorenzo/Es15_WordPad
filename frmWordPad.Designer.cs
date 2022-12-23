@@ -65,6 +65,7 @@
             this.destraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.elenchiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.puntatiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.immagineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RtxtTesto.Location = new System.Drawing.Point(0, 73);
-            this.RtxtTesto.Margin = new System.Windows.Forms.Padding(0);
+            this.RtxtTesto.Margin = new System.Windows.Forms.Padding(5, 0, 5, 3);
             this.RtxtTesto.Name = "RtxtTesto";
             this.RtxtTesto.Size = new System.Drawing.Size(757, 302);
             this.RtxtTesto.TabIndex = 1;
@@ -200,7 +201,8 @@
             this.modificaToolStripMenuItem,
             this.FontToolStripMenuItem,
             this.AllineamentoToolStripMenuItem,
-            this.elenchiToolStripMenuItem});
+            this.elenchiToolStripMenuItem,
+            this.immagineToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -402,10 +404,18 @@
             this.puntatiToolStripMenuItem.Text = "Puntati";
             this.puntatiToolStripMenuItem.Click += new System.EventHandler(this.puntatiToolStripMenuItem_Click);
             // 
+            // immagineToolStripMenuItem
+            // 
+            this.immagineToolStripMenuItem.Name = "immagineToolStripMenuItem";
+            this.immagineToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.immagineToolStripMenuItem.Text = "Immagine";
+            this.immagineToolStripMenuItem.Click += new System.EventHandler(this.immagineToolStripMenuItem_Click);
+            // 
             // frmWordPad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(757, 377);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -460,6 +470,7 @@
         private System.Windows.Forms.ToolStripMenuItem coloreToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton annullaToolStripButton;
         private System.Windows.Forms.ToolStripButton ripristinaToolStripButton;
+        private System.Windows.Forms.ToolStripMenuItem immagineToolStripMenuItem;
     }
 }
 

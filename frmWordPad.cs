@@ -207,6 +207,20 @@ namespace Es15_WordPad
         {
             RtxtTesto.Redo();
         }
+
+        private void immagineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Apri = new OpenFileDialog();
+            Apri.Filter = "Immagine|*.jpg;*.jpeg;*.png;*.gif;*.tif";
+            Apri.Title = "WordPad - Immagine";
+            Apri.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            if(Apri.ShowDialog() == DialogResult.OK)
+            {
+                Clipboard.SetImage(Image.FromFile(Apri.FileName));
+                RtxtTesto.Paste();
+            }
+        }
     }
 
     
