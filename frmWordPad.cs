@@ -160,17 +160,17 @@ namespace Es15_WordPad
         private void fontToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FontDialog fd = new FontDialog();
-            fd.Font = RtxtTesto.Font;
+            fd.Font = RtxtTesto.SelectionFont;
             fd.ShowDialog();
-            RtxtTesto.Font = fd.Font;
+            RtxtTesto.SelectionFont = fd.Font;
         }
 
         private void coloreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColorDialog cd = new ColorDialog();
-            cd.Color = RtxtTesto.ForeColor;
+            cd.Color = RtxtTesto.SelectionColor;
             cd.ShowDialog();
-            RtxtTesto.ForeColor = cd.Color;
+            RtxtTesto.SelectionColor = cd.Color;
         }
 
         private void EsciToolStripMenuItem_Click(object sender, EventArgs e)

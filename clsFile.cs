@@ -67,7 +67,7 @@ namespace Es15_WordPad
             SaveFileDialog dlgSalva = new SaveFileDialog();
             dlgSalva.Filter = "Pagina WordPad (*rtf)|*.rtf|" +
                 "Tutti i file (*.*)|*.*";
-            dlgSalva.Title = "Salva";
+            dlgSalva.Title = "Salva con Nome";
             DialogResult ris;
             ris = dlgSalva.ShowDialog();
             if (ris == DialogResult.OK)
